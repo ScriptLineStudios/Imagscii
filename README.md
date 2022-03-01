@@ -18,7 +18,7 @@ import requests
 open("OUT_FILE.jpg", "wb").write(requests.post("https://imagscii.com/create/16/8", files={"file": open("FILE_TO_PROCESS.png", "rb")}).content)
 ```
 The format for a request is the following:
-```https://imagscii.com/create/FONT_SIZE/SPACING```
+```https://www.imagscii.com/create/FONT_SIZE/SPACING```
 
 The same request using curl:
-```curl -X POST -F file=@FILE_TO_PROCESS.png https://imagscii/create/16/8 >> OUT_FILE.png```
+```curl -X POST -F file=@FILE_TO_PROCESS.png https://www.imagscii/create/16/8 >> OUT_FILE.png```
