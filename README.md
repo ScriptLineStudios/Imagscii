@@ -13,7 +13,7 @@
 # How to use it ❓
 
 Sample request using Python and the ```requests``` module:
-```
+```python
 import requests
 open("OUT_FILE.jpg", "wb").write(requests.post("https://imagscii.com/create/16/8", files={"file": open("FILE_TO_PROCESS.png", "rb")}).content)
 ```
